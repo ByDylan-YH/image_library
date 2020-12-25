@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 映射 接口 InsertRequestLogDao -->
+<mapper namespace="dao.InsertRequestLogDao">
+    <select id="insertLog" parameterType="java.util.Map">
+        insert into request_log values(ifnull(#{host},''),ifnull(#{resourceid},''),ifnull(#{resourcename},''),ifnull(#{projectname},''),ifnull(#{requestcode},''),ifnull(#{resultsize},0),now());
+    </select>
+</mapper>

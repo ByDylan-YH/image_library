@@ -1,0 +1,12 @@
+POST http://localhost:8080/picture/getPicture
+Content-Type: application/json;charset=UTF-8
+accesskey: 7SA35JA85YATHBK78Q03
+secretkey: TB1hjn3EDAS3XU6rhNM3sxBlAmO6wNefwMPAQxs8
+
+{
+  "resourceid": "c2ff3be3-982e-40f9-8b62-2f4698dbd327",
+  "requestcode": "500232200410082798"
+}
+
+###
+
